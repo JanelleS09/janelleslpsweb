@@ -818,12 +818,12 @@ body {
     }
 
     .navbar a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin: 12px 0;
         width: 80%;
         max-width: 280px;
         text-align: center;
-        padding: 15px 25px;
+        padding: 12px 24px;
         min-width: 200px;
         color: white;
         text-decoration: none;
