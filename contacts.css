@@ -956,7 +956,7 @@ body {
 @media (max-width: 480px) {
     .header {
         padding: 12px 4%;
-        height: 65px;
+        height: 80px;
     }
     
     .navbar {
