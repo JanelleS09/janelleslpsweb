@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Modern Portfolio</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Janelle Sulapas</a>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contacts.html" class="active">Contact</a>
+        </nav>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Contacts Section -->
+    <section class="contacts-section">
+        <!-- Map Section -->
+        <div class="map-container">
+            <h2 class="map-title">Find Me</h2>
+            
+            <div class="location-info">
+                <h3>
+                    <svg class="location-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    Location
+                </h3>
+                <p>NU-MOA, Coral Way, Pasay City, Metro Manila, Philippines</p>
+            </div>
+
+            <div class="map-embed">
+                <iframe 
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6089089089087!2d121.031!3d14.531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90aad473085%3A0x218b75a52b8bb4b!2sGXJJ%2B76R%2C%20Pasay%20City%2C%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1639123456789!5m2!1sen!2sus" 
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contacts-container">
+            <h1 class="contacts-title">Contacts</h1>
+            <p class="contacts-subtitle">
+                Fill out the form below and describe your project if you want to hire me. I will contact you as soon as possible.
+            </p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="from_name" class="form-input" placeholder="Enter your full name*" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" name="phone" class="form-input" placeholder="Enter your phone number*" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="reply_to" class="form-input" placeholder="Enter your e-mail*" required>
+                </div>
+                
+                <div class="form-group">
+                    <textarea name="message" class="form-textarea" placeholder="Type your message" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section class="hire-me-section">
+        <div class="hire-me-container">
+            <div class="hire-me-content">
+                <h1 class="hire-me-title">Hire Me for Your Next Big Project!</h1>
+                <p class="hire-me-subtitle">Contact me in any convenient way to discuss your idea.</p>
+                
+                <div class="social-links">
+                    <a href="//web.facebook.com/janelle.slps.9?mibextid=wwXIfr&rdid=Gv49faGkwhRIL4ua&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1AhzEAkxaS%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr#" class="social-link" title="Facebook">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                           <path d="M22.675 0h-21.35C.595 0 0 .593 0 1.326v21.348C0 23.407.595 24 1.325 24h11.488v-9.294H9.692v-3.622h3.121V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116c.73 0 1.325-.593 1.325-1.326V1.326C24 .593 23.405 0 22.675 0z"/>
+
+                        </svg>
+                        Facebook
+                    </a>
+                    
+                    <a href="https://www.instagram.com/janelle.slps/" class="social-link" title="Instagram">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                         </svg>
+                        INSTAGRAM
+                    </a>
+                    
+                    
+                   <a href="https://www.linkedin.com/in/janelle-sulapas-a5655b36b/" class="social-link" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" class="social-icon">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LINKEDIN
+                    
+                </a>
+                </div>
+            </div>
+            
+            <div class="hire-me-info">
+                <div class="info-section">
+                    <h3 class="info-title">NAVIGATION</h3>
+                    <ul class="info-list">
+                        <li><a href="about.html">About me</a></li>
+                          <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="homepage.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="info-section">
+                    <h3 class="info-title">INFORMATION</h3>
+                    <div class="info-details">
+                        <p><strong>Name:</strong> Janelle Sulapas</p>
+                        <p><strong>Email:</strong> janelleslps@gmail.com</p>
+                        <p><strong>Phone:</strong>09948573830 </p>
+                        <p><strong>City:</strong>Pasay City</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating particles -->
+    <div class="particles"></div>
+
+    <!-- Success message -->
+    <div class="success-message" id="successMessage">
+        Message sent successfully! I'll get back to you soon.
+    </div>
+
+    <script src="contacts.js"></script>
+</body>
+</html>
