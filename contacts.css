@@ -751,7 +751,7 @@ body {
 @media (max-width: 1023px) and (min-width: 769px) {
     .header {
         padding: 20px 3%;
-        height: 75px;
+        height: 80px;
     }
     
     .header.scrolled {
